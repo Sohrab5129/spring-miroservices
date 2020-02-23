@@ -1,0 +1,7 @@
+server:
+  port: 8191
+
+spring:  cloud:    config:      server:        git:          uri: https://github.com/Sohrab5129/spring-cloud-config-store/ #https://github.com/Sohrab5129/spring-cloud-config-store
+          search-paths:          - '*/**/*service'
+#          username: Sohrab5129
+#          password: Sohrab@78692#  profiles:#    active:#    - prod

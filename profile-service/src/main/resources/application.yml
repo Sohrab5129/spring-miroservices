@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: profile-prod
+  profiles:    active:    - prod
+#server:#  port: 9191
