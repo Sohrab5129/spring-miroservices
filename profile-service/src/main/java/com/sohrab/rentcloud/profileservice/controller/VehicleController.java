@@ -26,12 +26,12 @@ public class VehicleController {
 		return vehicleService.save(vehicle);
 	}
 
-	@GetMapping(value = "vehicle")
+	@GetMapping(value = "/vehicle")
 	public List<Vehicle> getAllVehicle() {
 		return vehicleService.getAllVehicle();
 	}
 
-	@GetMapping(value = "vehicle/{id}")
+	@GetMapping(value = "/vehicle/{id}")
 	public Optional<Vehicle> getVehicleById(@PathVariable("id") Integer id) {
 		return vehicleService.getVehicleById(id);
 	}

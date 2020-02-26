@@ -1,5 +1,8 @@
 package com.sohrab.rentcloud.profileservice.service;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +18,16 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public Customer save(Customer customer) {
 		return customerRepository.save(customer);
+	}
+
+	@Override
+	public List<Customer> getAllProfile() {
+		return customerRepository.findAll();
+	}
+
+	@Override
+	public Optional<Customer> getProfileById(Integer id) {
+		return customerRepository.findById(id);
 	}
 
 }
