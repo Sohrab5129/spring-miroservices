@@ -2,7 +2,7 @@ spring:
   application:
     name: rent
 
-server:  port: 0
+server:  port: 8181
   
 eureka:
   client:
